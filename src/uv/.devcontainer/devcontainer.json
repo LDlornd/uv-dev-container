@@ -3,52 +3,16 @@
         "dockerfile": "Dockerfile",
         "context": ".."
     },
-    "features": {
-        "ghcr.io/devcontainers/features/common-utils": {
-            "configureZshAsDefaultShell": true
-        },
-        "ghcr.io/devcontainers/features/azure-cli:1": {
-            "installBicep": true,
-        },
-        "ghcr.io/azure/azure-dev/azd:0": {},
-        "ghcr.io/devcontainers/features/github-cli": {},
-        "ghcr.io/va-h/devcontainers-features/uv": {},
-        "ghcr.io/eitsupi/devcontainer-features/jq-likes:2": {},
-        "ghcr.io/devcontainers/features/docker-in-docker": {},
-    },
     "customizations": {
         "vscode": {
             "settings": {
-                "dev.containers.copyGitConfig": true,
-                "editor.stickyScroll.defaultModel": "outlineModel",
-                "editor.stickyScroll.enabled": true,
-                "notebook.stickyScroll.enabled": true,
-                "editor.codeActionsOnSave": {
-                    "source.fixAll": "explicit",
-                    "source.organizeImports": "explicit"
-                }
+                "Lingma.PreferredLanguage for AI Chat": "简体中文",
+                "Lingma.DisplayLanguage": "简体中文"
             },
             "extensions": [
-                "aaron-bond.better-comments",
-                "charliermarsh.ruff",
-                "dotenv.dotenv-vscode",
-                "eamodio.gitlens",
-                "EditorConfig.EditorConfig",
-                "foxundermoon.shell-format",
-                "GitHub.copilot",
-                "lehoanganh298.json-lines-viewer",
-                "mechatroner.rainbow-csv",
-                "mhutchie.git-graph",
-                "ms-dotnettools.dotnet-interactive-vscode",
-                "ms-python.debugpy",
-                "ms-python.isort",
                 "ms-python.python",
-                "ms-python.vscode-pylance",
-                "njpwerner.autodocstring",
-                "redhat.vscode-yaml",
-                "stkb.rewrap",
-                "tamasfe.even-better-toml",
-                "yzhang.markdown-all-in-one"
+                "ms-toolsai.jupyter",
+                "Alibaba-Cloud.tongyi-lingma"
             ]
         }
     },

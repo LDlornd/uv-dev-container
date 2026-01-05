@@ -1,7 +1,7 @@
 {
-    "id": "uv",
+    "id": "lornd-uv",
     "version": "1.0.0",
-    "name": "uv",
+    "name": "lornd-uv",
     "description": "A .devcontainer template for UV python projects",
     "licenseURL": "https://github.com/mattmazzola/devcontainers/blob/main/LICENSE",
     "platforms": [

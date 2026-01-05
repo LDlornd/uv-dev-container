@@ -9,14 +9,6 @@ lsb_release -a
 
 # Tools
 git --version
-
-az version
-az bicep version
-azd version
-
-docker --version
-jq --version
-gh --version
 uv --version
 
 echo "postStartCommand.sh finished!"
