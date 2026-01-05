@@ -1,8 +1,14 @@
 {
     "build": {
         "dockerfile": "Dockerfile",
-        "context": ".."
+        "context": "..",
+        "options": [
+            "--network=host"
+        ]
     },
+    "runArgs": [
+        "--network=host"
+    ],
     "customizations": {
         "vscode": {
             "settings": {
@@ -21,9 +27,5 @@
     },
     "onCreateCommand": "bash ./.devcontainer/onCreateCommand.sh",
     "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
-    "postStartCommand": "bash ./.devcontainer/postStartCommand.sh",
-    "runArgs": [
-        "--env-file",
-        ".devcontainer/devcontainer.env"
-    ]
+    "postStartCommand": "bash ./.devcontainer/postStartCommand.sh"
 }
