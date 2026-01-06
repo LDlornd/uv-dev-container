@@ -6,6 +6,8 @@ RUN apt-get update && apt-get install -y \
     curl \
     git \
     zsh \
+    build-essential \
+    gcc g++ make \
     && rm -rf /var/lib/apt/lists/*
 
 # 安装 Oh-My-Zsh
