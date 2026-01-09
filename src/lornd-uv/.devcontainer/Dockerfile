@@ -1,10 +1,6 @@
 # 使用官方 Python 镜像作为基础
 FROM python:3.12-slim
 
-# 设置时区
-ENV TZ=Asia/Shanghai
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
 # 安装必要系统工具和 Zsh
 RUN apt-get update && apt-get install -y \
     curl \
