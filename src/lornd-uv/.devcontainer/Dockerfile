@@ -8,11 +8,16 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 # 安装必要系统工具和 Zsh
 RUN apt-get update && apt-get install -y \
     curl \
+    unzip \
     git \
     zsh \
     build-essential \
     gcc g++ make \
     && rm -rf /var/lib/apt/lists/*
+
+# 安装 nodejs
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
+RUN apt-get install -y nodejs npm
 
 # 安装 Oh-My-Zsh
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
