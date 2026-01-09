@@ -25,6 +25,7 @@
     "hostRequirements": {
         "gpu": "optional"
     },
+    "forwardPorts": [5900],
     "onCreateCommand": "bash ./.devcontainer/onCreateCommand.sh",
     "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
     "postStartCommand": "bash ./.devcontainer/postStartCommand.sh"
