@@ -15,9 +15,9 @@ RUN apt-get update && apt-get install -y \
     gcc g++ make \
     && rm -rf /var/lib/apt/lists/*
 
-# 安装 nodejs
+# 安装 nodejs 和 npm
 RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
-RUN apt-get install -y nodejs npm
+RUN apt-get install -y nodejs
 
 # 安装 Oh-My-Zsh
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
